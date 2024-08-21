@@ -1,5 +1,19 @@
 @charset "UTF-8";
 
+.prima::before{
+    content: '';
+    position: absolute;
+    background-image: url('imagens/code.svg');
+    background-size: 90px;
+    background-repeat: no-repeat;
+    z-index: 9;
+    width: 90px;
+    height: 90px;
+    opacity: 0.1;
+    bottom: 220px;
+    right: 520px;
+}
+
 :root{
     --cor00: #0056FB;
     --cor01: white;
@@ -188,6 +202,11 @@ input[type=text]{
     .texto p{
         width: 80vw;
     }
+
+
+    .prima::before{
+        display: none;
+    }
 }
 
 /*MOBILE*/
@@ -201,5 +220,9 @@ input[type=text]{
         padding-top: 100px;
         justify-content: flex-start;
         align-items: center;
+    }
+
+    .prima::before{
+        display: none;
     }
 }
